@@ -82,6 +82,8 @@ border-bottom: solid 1px var(--color-of-paragraphs-two);
 .header-nav{
    display: flex;
    align-items: center;
+   
+  
 }
 
 .header-list {
@@ -117,7 +119,8 @@ border-bottom: solid 1px var(--color-of-paragraphs-two);
     
     
 }
-.studio-active::after{
+.studio-active::after {
+display: block;
 content: '';
 width: 100%;
 height: 4px;
@@ -126,6 +129,18 @@ position: absolute;
 border-radius: 2px;
 bottom: -4px;
 left: 0;
+}
+
+.portfolio-active::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color-two);
+    position: absolute;
+    border-radius: 2px;
+    bottom: -4px;
+    left: 0;
 }
 
 
