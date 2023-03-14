@@ -119,6 +119,10 @@ border-bottom: solid 1px var(--color-of-paragraphs-two);
     
     
 }
+
+.studio-active {
+    color: var(--accent-text-color-two);
+}
 .studio-active::after {
 display: block;
 content: '';
@@ -131,6 +135,9 @@ bottom: -4px;
 left: 0;
 }
 
+.portfolio-active{
+    color: var(--accent-text-color-two);
+}
 .portfolio-active::after {
     display: block;
     content: '';
@@ -500,6 +507,7 @@ margin: 0 auto;
     background-color: var(--accent-text-color-two);
     justify-content: center;
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-links:not(:last-child){
@@ -566,6 +574,7 @@ margin: 0 auto;
     border-radius: 4px;
     height: 100%;
     width: 100%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-customer-links:hover,
@@ -670,6 +679,7 @@ margin: 0 auto;
     background-color: var(--color-of-paragraphs);
     justify-content: center;
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover,
@@ -742,7 +752,7 @@ margin: 0 auto;
     font-style: normal;
     font-family: inherit;
     font-weight: 500;
-    transition: 0.4s;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     border: 1px solid var(--color-of-paragraphs-two);
     border-radius: 4px;
@@ -799,9 +809,7 @@ margin: 0 auto;
     margin: 0 auto;
 }
 
-.card-set-info-portfolio:hover{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 
 .portfolio-name{
@@ -911,7 +919,7 @@ img{
 }
 
 .modal-close{
-    display: block;
+    display: flex;
     margin-left: auto;
     cursor: pointer;
     width: 24px;
@@ -921,6 +929,8 @@ img{
     color: var(--accent-text-color);
     background-color: var(--color-of-paragraphs-two);
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 .modal-close:hover,
 .modal-close:focus{
